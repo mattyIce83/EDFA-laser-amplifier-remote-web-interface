@@ -1,0 +1,443 @@
+<!-- RpPageHeader RpAccess=Realm1 RpAccess=Realm2 -->
+<!-- RpEnd -->
+<!DOCTYPE html>
+<html>
+    <title>
+	EDFA General Settings
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Refresh" content="5">
+    <link rel="stylesheet" href="EDFA_stylesheet.css" type="text/css">
+    <script src="EDFA_Utils.js" language="JavaScript"></script>
+    <!-- <script src="errhandler.js" language="JavaScript"></script>
+    <script src="validation.js" language="JavaScript"></script> -->
+
+    <style>
+        
+            #wrapper {
+                width: 100%;
+                border: 1px solid #000;
+                float: left;
+                background-color: #C0C0C0;
+                border-style: solid;
+                border-color: #383838; 
+                border-radius: 10px 10px 0 0;}
+
+            .headerDiv {
+                float: left;
+                width: 33%;
+                text-align: left;
+                font-size: 24px;
+                FONT-WEIGHT: bold;
+            }
+
+            .headerDiv2 {
+                float: right;
+                text-align: center;}
+
+            .headerDiv3 {
+                float: left;
+                width: 33%;
+                text-align: left;
+                font-size: 18px;
+                FONT-WEIGHT: bold;}
+
+            #navigation{
+                width: 100%;
+                float: left;
+                background-color: #C0C0C0;
+                border-style: solid;
+                border-color: #383838;
+                border: 1px solid #000;
+                border-radius: 0 0 10px 10px;
+                font-size: 14px;}
+
+
+            #header {
+                padding: 20px;
+
+            }
+        
+    </style> 
+
+    <div id="wrapper">
+        <div id="header">
+            <div class="headerDiv">
+                EDFA General Settings
+            </div>
+            <div class="headerDiv">
+            </div>
+            <div class="headerDiv2">
+                <!-- RpImageSource RpObjectPtr=PgLogo -->
+                <IMG SRC="Images/Logo.jpg" alt="Corporate Logo" width="256" height="64">
+                <!-- RpEnd -->
+            </div>
+        </div>          
+    </div>
+
+    <nav  id = "navigation">
+        <strong>General Settings</strong> |
+        <a href="EDFAChassisManager.html">EDFA Chassis Manager</a> |
+        <a href="EDFANetworkAdministration.html">Network Administration</a> |
+        <a href="EDFAThresholdSettings.html">Threshold</a> |
+        <a href="EDFAAlarmsStatus.html">Alarms Status</a> |
+        <a href="EDFAWelcomePage.html">Log Out</a>
+    </nav>
+    <!-- General table -->
+
+    <table  width="70%"  style="border:1; border-color: #383838; border-radius: 0 0 10px 10px;">
+        <tr>
+            <th class="tableBorderTextCentered" style="width:20%"><span class="tdbold">Data</span></th>
+            <th class="tableBorderTextCentered" style="width:20%"><span class="tdbold">Units</span></th>
+            <th class="tableBorderTextCentered" style="width:20%"><span class="tdbold">Current</span></th>
+            <th class="tableBorderTextCentered" style="width:20%"><span class="tdbold">Help</span></th>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered" style="width:30%">Model Number</td>
+            <td class="withBorderTdDis" style="width:5%"></td>
+            <td class="tableBorderTextCentered" style="width:15%">
+                <!-- RpNamedDisplayText Name="earModelNumber" RpTextType="ASCII" 
+                    RpGetType=Direct RpGetPtr=earModelNumber_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered" style="width:10%">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Serial Number</td>
+            <td class="withBorderTdDis"></td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earSerialNumber" RpTextType="ASCII" 
+                    RpGetType=Direct RpGetPtr=earSerialNumber_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Manufacturing Date</td>
+            <td class="withBorderTdDis"></td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earDateOfManufacture" RpTextType="ASCII" 
+                    RpGetType=Direct RpGetPtr=earDateOfManufacture_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">System Firmware Revision</td>
+            <td class="withBorderTdDis"></td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earFirmwareRevision" RpTextType="ASCII" 
+                    RpGetType=Direct RpGetPtr=earFirmwareRevision_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Control Mode</td>
+            <td class="withBorderTdDis"></td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earControlMode" RpTextType="Signed16" 
+                    RpGetType=Direct RpGetPtr=earControlMode_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">RTC Date and Time</td>
+            <td class="withBorderTdDis"></td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earRtcTime" RpTextType="ASCII" 
+                    RpGetType=Function RpGetPtr=getEARRtcTime_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Digi Firmware Revision</td>
+            <td class="withBorderTdDis"></td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earDigiFirmwareRev" RpTextType="ASCII" 
+                    RpGetType=Direct RpGetPtr=earDigiFirmwareRev_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Digi Flash Active Bank</td>
+            <td class="withBorderTdDis"></td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="eardigiActiveFB" RpTextType="ASCII" 
+                    RpGetType=Direct RpGetPtr=earDigiActiveFB_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Active flash Bank Confirmed</td>
+            <td class="withBorderTdDis"></td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earDigiActiveFBConfirmed" RpTextType="ASCII" 
+                    RpGetType=Direct RpGetPtr=earDigiActiveFBConfirmed_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Telnet Timeout</td>
+            <td class="tableBorderTextCentered">sec</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earDigiTelnetTimeout" RpTextType="ASCII" 
+                    RpGetType=Direct RpGetPtr=earDigiTelnetTimeout_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Measured Gain value</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earMeasuredGainValue" RpTextType="Unsigned32" 
+                    RpGetType=Direct RpGetPtr=earMeasuredGainValue_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Min Gain Setpoint</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earMinimumGainSetPoint" RpTextType="Unsigned32" 
+                    RpGetType=Direct RpGetPtr=earMinimumGainSetPoint_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Max Gain Setpoint</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earMaximumGainSetPoint" RpTextType="Unsigned32" 
+                    RpGetType=Direct RpGetPtr=earMaximumGainSetPoint_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Total Optical Output Power</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earTotalOpticalOutputPower" RpTextType="Signed32" 
+                    RpGetType=Direct RpGetPtr=earTotalOpticalOutputPower_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+
+        <tr>
+            <td class="tableHeaderTextCentered">Total Optical Output Power 2</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earTotalOpticalOutputPower2" RpTextType="Signed32" 
+                    RpGetType=Direct RpGetPtr=earTotalOpticalOutputPower2_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Max Power Setpoint</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earMaximumPowerSetpoint" RpTextType="Unsigned32" 
+                    RpGetType=Direct RpGetPtr=earMaximumPowerSetpoint_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+
+        <tr>
+            <td class="tableHeaderTextCentered">Max Current Setpoint</td>
+            <td class="tableBorderTextCentered">mA</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earMaximumCurrentSetpoint" RpTextType="Unsigned32" 
+                    RpGetType=Direct RpGetPtr=earMaximumCurrentSetpoint_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Pump Laser Current</td>
+            <td class="tableBorderTextCentered">mA</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earPumpLaserCurrent" RpTextType="Unsigned32" 
+                    RpGetType=Direct RpGetPtr=earPumpLaserCurrent_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Pump Laser Current 2</td>
+            <td class="tableBorderTextCentered">mA</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earPumpLaserCurrent2" RpTextType="Unsigned32" 
+                    RpGetType=Direct RpGetPtr=earPumpLaserCurrent2_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Ambient Temperature</td>
+            <td class="tableBorderTextCentered">&#176C</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earAmbientTemperature" RpTextType="Signed16" 
+                    RpGetType=Direct RpGetPtr=earAmbientTemperature_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Total Optical Input Power</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earTotalOpticalInputPower" RpTextType="Signed32" 
+                RpGetType=Direct RpGetPtr=earTotalOpticalInputPower_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Total Optical Input Power 2</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earTotalOpticalInput2Power" RpTextType="Signed32" 
+                    RpGetType=Direct RpGetPtr=earTotalOpticalInput2Power_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <!-- General table with set button-->
+
+        <tr>
+            <td class="tableHeaderTextCentered">Gain Control Setpoint</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earGainControlSetpoint" RpTextType="Unsigned32" 
+                    RpGetType=Direct RpGetPtr=earGainControlSetpoint_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Gain Control Setpoint 2</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earGainControlSetpoint2" RpTextType="Unsigned32" 
+                    RpGetType=Direct RpGetPtr=earGainControlSetpoint2_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Current Setpoint</td>
+            <td class="tableBorderTextCentered">mA</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earCurrentSetpointValue" RpTextType="Unsigned32" 
+                    RpGetType=Direct RpGetPtr=earCurrentSetpointValue_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Power Safety Mode</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earPowerSafetyMode" RpTextType="Unsigned32" 
+                    RpGetType=Direct RpGetPtr=earPowerSafetyMode_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+    </table>
+    <!-- RpEnd -->
+
+</body>
+
+</html>

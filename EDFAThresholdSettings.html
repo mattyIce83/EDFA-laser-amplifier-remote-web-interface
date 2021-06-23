@@ -1,0 +1,326 @@
+<!-- RpPageHeader RpAccess=Realm1 RpAccess=Realm2 -->
+<!-- RpEnd -->
+<!DOCTYPE html>
+<html>
+    <title>
+	EDFA Threshold Settings
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Refresh" content="20">
+    <link rel="stylesheet" href="EDFA_stylesheet.css" type="text/css">
+    <script src="EDFA_Utils.js" language="JavaScript"></script>
+    <!-- <link type="text/css" href="/css/stylesheet.css" rel="stylesheet">
+    <script src="/scripts/errhandler.js" language="JavaScript"></script>
+    <script src="/scripts/validation.js" language="JavaScript"></script>
+    </script>-->
+
+    <style>
+        
+            #wrapper {
+                width: 100%;
+                border: 1px solid #000;
+                float: left;
+                background-color: #C0C0C0;
+                border-style: solid;
+                border-color: #383838; 
+                border-radius: 10px 10px 0 0;}
+
+            .headerDiv {
+                float: left;
+                width: 33%;
+                text-align: left;
+                font-size: 24px;
+                FONT-WEIGHT: bold;
+            }
+
+            .headerDiv2 {
+                float: right;
+                text-align: center;
+                border-style: solid;
+                border-color: #383838;
+                border: 1px solid #000;}
+
+            .headerDiv3 {
+                float: left;
+                width: 33%;
+                text-align: left;
+                font-size: 18px;
+                FONT-WEIGHT: bold;}
+
+            #navigation{
+                width: 100%;
+                float: left;
+                background-color: #C0C0C0;
+                border-style: solid;
+                border-color: #383838;
+                border: 1px solid #000;
+                border-radius: 0 0 10px 10px;
+                font-size: 14px;}
+
+
+            #header {
+                padding: 20px;
+
+            }
+        
+    </style> 
+
+    <div id="wrapper">
+        <div id="header">
+            <div class="headerDiv">
+                EDFA Threshold Levels
+            </div>
+            <div class="headerDiv">
+            </div>
+            <div class="headerDiv2">
+                <!-- RpImageSource RpObjectPtr=PgLogo -->
+                <IMG SRC="Images/Logo.jpg" alt="Corporate Logo" width="256" height="64">
+                <!-- RpEnd -->
+            </div>
+        </div>          
+    </div>
+
+    <nav  id = "navigation">
+        <a href="EDFAGeneralSettings.html">General Settings</a> |
+        <a href="EDFAChassisManager.html">EDFA Chassis Manager</a> |
+        <a href="EDFANetworkAdministration.html">Network Administration</a> |
+        <strong>Threshold</strong> |
+        <a href="EDFAAlarmsStatus.html">Alarms Status</a> |
+        <a href="EDFAWelcomePage.html">Log Out</a>
+    </nav>
+    <table width="70%"  style="border:1; border-color: black; border-radius: 0 0 10px 10px;" >
+        
+        <tr class="tableBorderTextCentered">
+            <th class="tableBorderTextCentered" style="width:25%"><span class="tdbold">Thresholds</span></th>
+            <th class="tableBorderTextCentered" style="width:10%"><span class="tdbold">Units</span></th>
+            <th class="tableBorderTextCentered" style="width:10%"><span class="tdbold">Current Value</span></th>
+            <th class="tableBorderTextCentered" style="width:10%"><span class="tdbold">Help</span></th>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Temperature High</td>
+            <td class="tableBorderTextCentered">&#176C</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earTemperatureAlarmThreshold" RpTextType="Signed16" 
+                    RpGetType=Direct RpGetPtr=earTemperatureAlarmThreshold_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Input Power Low</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earInputPowerLowAlarmLevel" RpTextType="Signed32" 
+                    RpGetType=Direct RpGetPtr=earInputPowerLowAlarmLevel_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Input Power 2 Low</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earInput2PowerLowAlarmLevel" RpTextType="Unsigned32" 
+                    RpGetType=Direct RpGetPtr=earInput2PowerLowAlarmLevel_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Input Power High</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earInputPowerHighAlarmLevel" RpTextType="Unsigned32" 
+                    RpGetType=Direct RpGetPtr=earInputPowerHighAlarmLevel_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Input Power 2 High</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earInput2PowerHighAlarmLevel" RpTextType="Unsigned32" 
+                    RpGetType=Direct RpGetPtr=earInput2PowerHighAlarmLevel_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Input Power off</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earInputPowerOffAlarmLevel" RpTextType="Signed32" 
+                    RpGetType=Direct RpGetPtr=earInputPowerOffAlarmLevel_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Input Power 2 off</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earInput2PowerOffAlarmLevel" RpTextType="Unsigned32" 
+                    RpGetType=Direct RpGetPtr=earInput2PowerOffAlarmLevel_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Input Power too High</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earInputPowerTooHighAlarmLevel" RpTextType="Unsigned32" 
+                    RpGetType=Direct RpGetPtr=earInputPowerTooHighAlarmLevel_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Input Power 2 too High</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earInput2PowerTooHighAlarmLevel" RpTextType="Unsigned32" 
+                    RpGetType=Direct RpGetPtr=earInput2PowerTooHighAlarmLevel_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Output Power Low</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earOutputPowerLowAlarmLevel" RpTextType="Unsigned32" 
+                    RpGetType=Direct RpGetPtr=earOutputPowerLowAlarmLevel_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Output Power 2 Low</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earOutputPower2LowAlarmLevel" RpTextType="Unsigned32" 
+                    RpGetType=Direct RpGetPtr=earOutputPower2LowAlarmLevel_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Output Power High</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earOutputPowerHighAlarmLevel" RpTextType="Unsigned32" 
+                    RpGetType=Direct RpGetPtr=earOutputPowerHighAlarmLevel_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Output Power 2 High</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earOutputPower2HighAlarmLevel" RpTextType="Unsigned32" 
+                    RpGetType=Direct RpGetPtr=earOutputPower2HighAlarmLevel_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+
+        <tr>
+            <td class="tableHeaderTextCentered">Output Power off</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earOutputPowerOffAlarmLevel" RpTextType="Unsigned32" 
+                    RpGetType=Direct RpGetPtr=earOutputPowerOffAlarmLevel_tmep -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Output Power 2 off</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earOutputPower2OffAlarmLevel" RpTextType="Unsigned32" 
+                    RpGetType=Direct RpGetPtr=earOutputPower2OffAlarmLevel_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Output Power Too High</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earOutputPowerTooHighAlarmLevel" RpTextType="Unsigned32" 
+                    RpGetType=Direct RpGetPtr=earOutputPowerTooHighAlarmLevel_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tableHeaderTextCentered">Output Power 2 Too High</td>
+            <td class="tableBorderTextCentered">dBm</td>
+            <td class="tableBorderTextCentered">
+                <!-- RpNamedDisplayText Name="earOutputPower2TooHighAlarmLevel" RpTextType="Unsigned32" 
+                RpGetType=Direct RpGetPtr=earOutputPower2TooHighAlarmLevel_temp -->
+                <!-- RpEnd -->
+            </td>
+            <td class="tableBorderTextCentered">
+                <!-- Help Place Holder, TBD -->
+            </td>
+        </tr>
+
+    </table>
+    
+</body>
+
+</html>

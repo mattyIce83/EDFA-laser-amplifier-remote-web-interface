@@ -1,0 +1,927 @@
+body
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: #F0F0F0;
+    color: black;
+}
+
+select
+{
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+INPUT
+{
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+
+TABLE, TR, TD, P, BR {
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+}
+
+.pageheader {
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    FONT-WEIGHT: bold;
+    COLOR: black;
+    background-color: #C0C0C0;
+    border-style: solid;
+    border-color: #383838;
+    border-radius: 10px 10px 0 0;
+}
+
+.navpane{}
+
+.CONTENTHEADER {
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 16px;
+    FONT-WEIGHT: bold;
+    COLOR: pink;
+    BACKGROUND-COLOR: #00008B;
+    PADDING: 10px;
+    MARGIN: 0px;
+}
+.PAGETAB {
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: normal;
+    COLOR: #00008B;
+    BACKGROUND-COLOR: #C5D6FC;
+    BORDER-STYLE: solid;
+    BORDER-COLOR: #C5D6FC;
+    PADDING: 5px;
+}
+.PAGETAB-SELECTED {	
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: bold;
+    COLOR: #00008B;
+	BACKGROUND-COLOR: #C5D6FC;
+    BORDER-STYLE: solid;
+    BORDER-COLOR: #C5D6FC;	
+    PADDING: 5px;
+}
+.PAGECONTENT {
+    BACKGROUND-COLOR: #E8E8E8;
+}
+.COPYRIGHT {
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 10px;
+}
+.BORDERCOLOR {
+    BACKGROUND-COLOR: #00008B;
+}
+.BORDER {
+    PADDING: 0px;
+    BORDER: 2px solid #00008B;
+}
+
+HR.SEPARATORLINE {
+    COLOR: #00008B;
+}
+A:LINK, A:VISITED, A:ACTIVE {
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+    COLOR: #0033CC;
+}
+A:HOVER {
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+    COLOR: #00008B;
+}
+.ERRORFIELD {
+    FONT-WEIGHT: bold;
+    BACKGROUND-COLOR: #FFDDDD;
+    BORDER-COLOR: #E80000;
+    BORDER-STYLE: solid;
+}
+.STATUSBOX {
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: bold;
+    COLOR: #00008B;
+    BACKGROUND-COLOR: red;
+    BORDER-COLOR: #00008B;
+    BORDER-STYLE: solid;
+    BORDER-WIDTH: thin;
+}
+.ERRORBOX {
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: bold;
+    COLOR: #E80000;
+    BACKGROUND-COLOR: #FFDDDD;
+    BORDER-COLOR: #E80000;
+    BORDER-STYLE: solid;
+    BORDER-WIDTH: thin;
+}
+.ACTIVE {
+    COLOR: #FFFFFF;
+    BACKGROUND-COLOR: #228B22;
+}
+.INACTIVE {
+    COLOR: #FFFFFF;
+    BACKGROUND-COLOR: #00008B;
+}
+
+/*****************************************************************************
+ * General Page Content Style
+ *****************************************************************************/
+page-content {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+/*****************************************************************************
+ * General Page Content Body Style
+ *****************************************************************************/
+
+page-content-body {
+    border: 1px solid #00008b;
+}
+
+page-content-body div.page-heading {
+    color: white;
+    padding: 4px 5px 4px 5px;
+    background-color: #00008b;
+}
+
+page-content-body td.page-heading-cell {
+    color: white;
+    width: 99%;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #00008b;
+}
+
+page-content-body div.page-heading h2 {
+    margin: 0px;
+    padding: 0px;
+    vertical-align: middle;
+}
+
+page-content-body div.page-heading a {
+    color: white;
+    vertical-align: middle;
+}
+
+page-content-body td.page-subheading-cell {
+    color: white;
+    width: 1%;
+    white-space: nowrap;
+    text-align: right;
+    vertical-align: middle;
+    background-color: #00008b;
+}
+
+page-content-body td.page-subheading-cell a {
+    color: white;
+    vertical-align: middle;
+}
+
+page-content-body td.page-subheading-cell span {
+    vertical-align: middle;
+}
+
+page-content-body td.page-subheading-cell img {
+    vertical-align: middle;
+}
+
+page-content-body div.page-htmlcontent {
+    margin: 5px;
+}
+
+/*****************************************************************************
+ * Miscellaneous Page Content Styles
+ *****************************************************************************/
+
+page-content-body .page-separator {
+    color: #00008b;
+    margin: 0px 0px 5px 0px;
+    padding: 3px 5px 3px 5px;
+    background-color: #c5d6fc;
+}
+
+page-content-body .stats-label {
+    width: 25%;
+    white-space: nowrap;
+    text-align: right;
+}
+
+/*****************************************************************************
+ * Page and Form Field & Input Styles
+ *****************************************************************************/
+
+page-content .field-input {
+    width: 99%;
+    white-space: nowrap;
+    text-align: left;
+}
+
+page-content .field-input-small {
+    width: 1%;
+    white-space: nowrap;
+    text-align: left;
+}
+
+page-content .field-checkbox {
+    width: 99%;
+    white-space: nowrap;
+    text-align: left;
+}
+
+page-content .field-checkbox-small {
+    width: 1%;
+    white-space: nowrap;
+    text-align: left;
+}
+
+page-content .field-label {
+    width: 1%;
+    white-space: nowrap;
+    text-align: right;
+}
+
+page-content .field-label-left {
+    width: 1%;
+    white-space: nowrap;
+    text-align: left;
+}
+
+page-content .field-value {
+    width: 99%;
+    white-space: nowrap;
+    text-align: left;
+}
+
+page-content .field-value-small {
+    width: 1%;
+    white-space: nowrap;
+    text-align: left;
+}
+
+page-content .field-spacing {
+    padding-left: 10px;
+}
+
+page-content .field-expansion {
+    width: 99%;
+}
+
+page-content .field-indent {
+    padding-left: 30px;
+}
+
+page-content .field-error {
+    border-style: solid;
+    border-color: #E80000;
+    background-color: #FFDDDD;
+}
+
+page-content .field-warning {
+    border-style: solid;
+    border-color: #E8E800;
+    background-color: #FFFFC0;
+}
+
+
+/*****************************************************************************
+ * General Page Content Table & List Styles
+ *****************************************************************************/
+
+ table.page-content-table {
+    width: 98%;
+}
+
+ table.page-content-table th {
+    white-space: nowrap;
+    padding: 3px 10px 3px 10px;
+}
+
+ table.page-content-table td {
+    white-space: nowrap;
+    padding: 3px 10px 3px 10px;
+}
+
+ table.page-content-table thead tr th {
+    border-bottom: 1px solid #00008b;
+}
+
+ table.page-content-table .column-header {
+    width: 1%;
+}
+
+ table.page-content-table .column-spacing {
+    width: 100%;
+}
+
+ table.page-content-table .primary-row {
+    background-color: white;
+}
+
+ table.page-content-table .secondary-row {
+    background-color: #dcdcdc;
+}
+
+ table.page-content-table .group-row {
+    border-top: 1px solid #00008b;
+    background-color: white;
+}
+
+/*****************************************************************************
+ * General Tab Content Body Style
+ *****************************************************************************/
+
+ div.tab-heading {
+}
+
+ div.tab-content {
+    margin-bottom: 5px;
+}
+
+ div.tab-content div.tab-content-heading {
+    margin: 0px;
+    color: #00008b;
+    background-color: #c5d6fc;
+    padding: 3px 5px 3px 5px;
+}
+
+ div.tab-content div.tab-content-heading h3 {
+    margin: 0px;
+    padding: 0px;
+	margin-left: 15px;
+}
+
+ div.tab-content div.tab-content-heading h3 a {
+    display: block;
+}
+
+ div.tab-content div.tab-content-heading h3.tab-selected {
+    font-weight: bold;
+}
+
+ div.tab-content div.tab-content-heading img {
+	padding-top: 3px;
+    float: left;
+}
+
+ div.tab-content div.tab-content-body {
+    margin: 10px;
+}
+
+ div.tab-content div.tab-content-body-heading {
+    padding-bottom: 10px;
+}
+
+/*****************************************************************************
+ * Form Style
+ *****************************************************************************/
+
+form.form-content {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*****************************************************************************
+ * Form Button Bar Style
+ *****************************************************************************/
+
+form.form-content div.form-buttons {
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 1px solid #00008b;
+}
+
+/*****************************************************************************
+ * Page Messages Style
+ *****************************************************************************/
+
+div.page-content-messages {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+div.page-content-messages div.status-message {
+    padding: 5px;
+    color: #00008B;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    border-width: thin;
+    border-style: solid;
+    border-color: #00008B;
+    background-color: #E8E8E8;
+}
+
+div.page-content-messages div.error-message {
+    padding: 5px;
+    color: #E80000;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    border-width: thin;
+    border-style: solid;
+    border-color: #E80000;
+    background-color: #FFDDDD;
+}
+
+/*****************************************************************************
+ * General Help Page Header Style
+ *****************************************************************************/
+
+div.help-page-header {
+    padding: 0px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/*****************************************************************************
+ * Help Page Logo Style
+ *****************************************************************************/
+
+div.help-page-header-logo {
+    float: left;
+    width: 200px;
+    height: 101px;
+    padding: 0px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/*****************************************************************************
+ * Help Page Title (Heading) Style
+ *****************************************************************************/
+
+div.help-page-header-title {
+    padding-top: 5px;
+    margin-left: 220px;
+}
+
+div.help-page-header-title h1 {
+    text-align: left;
+    padding-bottom: 3px;
+}
+
+
+/*****************************************************************************
+ * Help Header/Content Separator Style
+ *****************************************************************************/
+
+div.help-page-header-separator {
+    clear: both;
+}
+
+
+/*****************************************************************************
+ * General Help Page Sub-Header Style
+ *****************************************************************************/
+
+div.help-page-subheader {
+	height: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #00008b;
+}
+
+/*****************************************************************************
+ * Current Help Page Title Style
+ *****************************************************************************/
+
+div.help-page-subheader-title {
+	float: left;
+    padding: 0px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+div.help-page-subheader-title h2 {
+	font-size: 18px;
+	font-weight: bold;
+    margin: 0px;
+	padding: 0px;
+	vertical-align: middle;
+}
+
+
+/*****************************************************************************
+ * General Help Page Content & Body Style
+ *****************************************************************************/
+
+div.page-content-help {
+	margin: 1px;
+    text-align: right;
+}
+
+div.help-page-content-body {
+	font-size: 12px;
+}
+
+div.help-page-content .field-spacing {
+    padding-left: 10px;
+}
+
+div.help-page-content .field-indent {
+    padding-left: 30px;
+}
+
+div.help-page-content-body p {}
+
+div.help-page-content-body div.help-section {
+	margin-left: 5px;
+}
+
+div.help-page-content-body div.help-section h3 {
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: -5px;
+	text-decoration: underline;
+}
+
+div.help-page-content-body div.help-section p {
+	font-size: 12px;
+}
+
+div.help-page-content-body div.help-field {}
+
+div.help-page-content-body div.help-field h4 {
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 2px;
+	padding-bottom: 0px;
+}
+
+div.help-page-content-body div.help-field p {
+	font-size: 12px;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+
+/*****************************************************************************
+ * General Help Page Content & Body Style
+ *****************************************************************************/
+
+div.help-page-content-body table.help-content-table {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+div.help-page-content-body table.help-content-table thead {
+    background-color: #c3c3c3
+}
+
+div.help-page-content-body table.help-content-table thead tr th {
+    padding: 3px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+table.help-content-table tbody tr td {
+    padding: 2px;
+    text-align: left;
+    vertical-align: top;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+/*****************************************************************************
+ * General Help Page Sub-Header Style
+ *****************************************************************************/
+
+div.help-page-subheader {
+	height: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #00008b;
+}
+
+/*****************************************************************************
+ * Current Help Page Title Style
+ *****************************************************************************/
+
+div.help-page-subheader-title {
+	float: left;
+    padding: 0px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+div.help-page-subheader-title h2 {
+	font-size: 18px;
+	font-weight: bold;
+    margin: 0px;
+	padding: 0px;
+	vertical-align: middle;
+}
+
+
+/*****************************************************************************
+ * Help Navigation Buttons Style
+ *****************************************************************************/
+
+div.help-page-subheader-navigation {
+	text-align: right;
+    vertical-align: middle;
+}
+
+div.help-page-subheader-navigation a {
+	vertical-align: middle;
+}
+
+div.help-page-subheader-navigation img {
+    border: 0px;
+	vertical-align: middle;
+}
+
+
+
+/*****************************************************************************
+ * Help Table of Contents Style
+ *****************************************************************************/
+
+div.help-page-content-toc-help {
+	padding: 10px;
+}
+
+div.help-page-content-toc ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+div.help-page-content-toc li {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+div.help-page-content-toc ul li {
+	margin-bottom: 10px;
+}
+
+div.help-page-content-toc ul li.section {
+	font-weight: bold;
+}
+
+div.help-page-content-toc ul li.section a {
+    font-weight: normal;
+}
+
+div.help-page-content-toc ul li.section ul {
+	margin-left: 20px;
+}
+
+div.help-page-content-toc ul li.section ul li {
+	margin-bottom: 0px;
+	font-weight: normal;
+}
+
+
+/*****************************************************************************
+ * General Help Page Content & Body Style
+ *****************************************************************************/
+
+div.help-page-content{
+	margin: 10px;
+}
+
+div.help-page-content-body {
+	font-size: 12px;
+}
+
+div.help-page-content .field-spacing {
+    padding-left: 10px;
+}
+
+div.help-page-content .field-indent {
+    padding-left: 30px;
+}
+
+div.help-page-content-body p {}
+
+div.help-page-content-body div.help-section {
+	margin-left: 5px;
+}
+
+div.help-page-content-body div.help-section h3 {
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: -5px;
+	text-decoration: underline;
+}
+
+div.help-page-content-body div.help-section p {
+	font-size: 12px;
+}
+
+div.help-page-content-body div.help-field {}
+
+div.help-page-content-body div.help-field h4 {
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 2px;
+	padding-bottom: 0px;
+}
+
+div.help-page-content-body div.help-field p {
+	font-size: 12px;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+
+/*****************************************************************************
+ * General Help Page Content & Body Style
+ *****************************************************************************/
+
+div.help-page-content-body table.help-content-table {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+div.help-page-content-body table.help-content-table thead {
+    background-color: #c3c3c3
+}
+
+div.help-page-content-body table.help-content-table thead tr th {
+    padding: 3px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+table.help-content-table tbody tr td {
+    padding: 2px;
+    text-align: left;
+    vertical-align: top;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+/*****************************************************************************
+ * Help Header/Content Separator Style
+ *****************************************************************************/
+
+div.help-page-footer-separator {
+    clear: both;
+}
+
+
+/*****************************************************************************
+ * Help Page Footer & Copyright Style
+ *****************************************************************************/
+
+div.help-page-footer-copyright {
+    font-size: 10px;
+    padding-top: 15px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+
+   table{
+    border:1; 
+    border-color: #383838; 
+    border-radius: 0 0 10px 10px;
+   }
+
+	td{
+	border-style:solid;
+	border:1;
+	}
+
+	.loginScreen{
+	text-align:center;
+        border-top:0;
+	border-left:0;
+	border-right:0;
+	border-color:rgb(0,0,160);
+	}
+	
+	.noBordersLogin{
+	border-style:none;
+	}
+
+	.ipgTitle{
+	color:rgb(0,0,160);
+	font-size:30;
+	}
+	
+	
+	.userPassLogin{
+	font-weight:bold;
+	color:rgb(0,0,160);
+	}
+	
+	.btnLogincenter{
+	text-align:center;
+	border-style:none;
+	}
+	
+	.tabsTitle{
+	border-style:solid;
+	text-align:center;
+	border-color:rgb(0,0,160);
+	border-collapse:collapse;
+	background-color:white;
+	}
+	
+	.tdTabs{
+	 border-style:none;
+	 }
+ 
+	.tables{
+	 width:98%;
+	 background-color:rgb(53,64,198);
+	 font-size:25px;
+	 border-color:rgb(53,64,198);
+	 color:white;
+	 size:30%;
+	 }
+	 
+	.withBorderTdDis{
+    border-color:rgb(0,0,160);
+	background-color:rgb(206,206,206); 
+	}
+	
+   .tableBorder{
+   border-collapse:collapse;
+   border-color:rgb(0,0,160);
+   }
+ 
+   .tableBorderTextCentered{
+   border-collapse:collapse;
+   border-color:rgb(0,0,160);
+   text-align:center;
+   }
+   
+   .tableHeaderTextCentered{
+   border-collapse:collapse;
+   border-color:rgb(0,0,160);
+   background-color:rgb(0,0,160);
+   text-align:center;
+   color:white;
+   }
+   
+   .ChassisRebootBtn{
+    width:155px;
+	background-color:rgb(128,128,255);
+	border-color:rgb(128,128,255);
+	color:rgb(0,0,128);
+	font-size:20px;
+	}
+
+	.NetworkTab{
+	border-style:none;
+	margin-top:1%;
+	}
+
+   
+    	
+   .tdbold{
+    
+	font-size:18px;
+        font-family:agency;
+	}
+	
+	.NetworkTh{
+	border-collapse:collapse;
+	border-color:rgb(0,0,160);
+	font-size:20px;
+	border-style:solid;
+	}
+	 
+	.TextDisable{
+	border-style:none;
+	background-color:white;
+	color:black;
+	text-align:center;
+    }
+	
+    .helpDisable{
+    border-style:none;
+	background-color:white;
+	color:black;
+	}
+	 
+

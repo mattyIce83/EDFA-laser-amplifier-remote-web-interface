@@ -1,0 +1,372 @@
+<!-- RpPageHeader RpAccess=Realm1 RpAccess=Realm2 -->
+<!-- RpEnd -->
+<!DOCTYPE html>
+<html>
+    
+        <title>EDFA Alarms</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Refresh" content="2">
+        <link rel="stylesheet" href="EDFA_stylesheet.css" type="text/css">
+        <script src="EDFA_Utils.js" language="JavaScript"></script>
+   
+    <style>
+        
+            #wrapper {
+                width: 100%;
+                border: 1px solid #000;
+                float: left;
+                background-color: #C0C0C0;
+                border-style: solid;
+                border-color: #383838; 
+                border-radius: 10px 10px 0 0;}
+
+            .headerDiv {
+                float: left;
+                width: 33%;
+                text-align: left;
+                font-size: 24px;
+                FONT-WEIGHT: bold;
+            }
+
+            .headerDiv2 {
+                float: right;
+                text-align: center;
+                border-style: solid;
+                border-color: #383838;
+                border: 1px solid #000;}
+
+            .headerDiv3 {
+                float: left;
+                width: 33%;
+                text-align: left;
+                font-size: 18px;
+                FONT-WEIGHT: bold;}
+
+            #navigation{
+                width: 100%;
+                float: left;
+                background-color: #C0C0C0;
+                border-style: solid;
+                border-color: #383838;
+                border: 1px solid #000;
+                border-radius: 0 0 10px 10px;
+                font-size: 14px;}
+
+
+            #header {
+                padding: 20px;
+
+            }
+        
+    </style>  
+
+    <div id="wrapper">
+        <div id="header">
+            <div class="headerDiv">
+                EDFA Alarms Status
+            </div>
+            <div class="headerDiv">
+            </div>
+            <div class="headerDiv2">
+                <!-- RpImageSource RpObjectPtr=PgLogo -->
+                <IMG SRC="Images/Logo.jpg" alt="Corporate Logo" width="256" height="64">
+                <!-- RpEnd -->
+            </div>
+        </div>          
+    </div>
+
+    <nav  id = "navigation">
+        <a href="EDFAGeneralSettings.html">General Settings</a> |
+        <a href="EDFAManager.html">EDFA Chassis Manager</a> |
+        <a href="EDFANetworkAdministration.html">Network Administration</a> |
+        <a href="EDFAThresholdSettings.html">Threshold</a> |
+        <strong>Alarms</strong> |
+        <a href="EDFAWelcomePage.html">Log Out</a>
+    </nav>
+        
+        <table id="alarmtable" style="border: 1; border-color: black; border-radius: 0 0 10px 10px;">
+            <thead class="tableBorderTextCentered">
+                <th class="tableBorderTextCentered" style="width:20%"><span class="tdbold">Alarm</span></th>
+                <th class="tableBorderTextCentered" style="width:20%"><span class="tdbold">State</span></th>
+                <th></th>
+                <th class="tableBorderTextCentered" style="width:20%"><span class="tdbold">Alarm</span></th>
+                <th class="tableBorderTextCentered" style="width:20%"><span class="tdbold">State</span></th>
+            </thead>
+            
+            <tbody>
+                
+            <tr>
+                <td class="tableHeaderTextCentered">Temperature High</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="TemperatureHighAlarm" 
+                        RpTextType="Unsigned32" RpGetType=Direct
+                        RpGetPtr=temperatureHighAlarm --> 0
+                    <!-- RpEnd -->
+                </td>
+                <td></td>
+                <td class="tableHeaderTextCentered">PreAmp Out Too High</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="PreAmpOutTooHighAlarm" 
+                        RpTextType="Unsigned32" RpGetType=Direct
+                        RpGetPtr=preAmpOutTooHighAlarm -->1
+                    <!-- RpEnd -->
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="tableHeaderTextCentered">Fan Failure</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="FanFailureAlarm" 
+                        RpTextType="Unsigned32" RpGetType=Direct
+                        RpGetPtr=fanFailureAlarm -->0
+                    <!-- RpEnd -->
+                </td>
+                <td></td>
+                <td class="tableHeaderTextCentered">PreAmp Out Too High</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="PreAmpOutTooHighAlarm" 
+                        RpTextType="Unsigned32" RpGetType=Direct 
+                        RpGetPtr=preAmpOutTooHighAlarm -->1
+                    <!-- RpEnd -->
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="tableHeaderTextCentered">PreAmp Out High</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="PreAmpOutHighAlarm" 
+                        RpTextType="Unsigned32"  RpGetType=Direct  
+                        RpGetPtr=preAmpOutHighAlarm -->1
+                    <!-- RpEnd -->
+                </td>
+                <td></td>
+                <td class="tableHeaderTextCentered">PreAmp Out Low</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="PreAmpOutLowAlarm" 
+                        RpTextType="Unsigned32"  RpGetType=Direct 
+                        RpGetPtr=preAmpOutLowAlarm -->0
+                    <!-- RpEnd -->
+                </td>
+            </tr>
+               
+
+            
+            <tr>
+                <td class="tableHeaderTextCentered">PreAmp In Too High</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="PreAmpInTooHighAlarm" 
+                        RpTextType="Unsigned32"  RpGetType=Direct  
+                        RpGetPtr=preAmpInTooHighAlarm -->0
+                    <!-- RpEnd -->
+                </td>
+                <td></td>
+                <td class="tableHeaderTextCentered">PreAmp In High</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="PreAmpInHighAlarm" 
+                        RpTextType="Unsigned32"  RpGetType=Direct  
+                        RpGetPtr=preAmpInHighAlarm -->0
+                    <!-- RpEnd -->
+                </td>
+            </tr>
+           
+            <tr>
+                <td class="tableHeaderTextCentered">PreAmp In Low</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="PreAmpInLowAlarm" 
+                        RpTextType="Unsigned32"  RpGetType=Direct  
+                        RpGetPtr=preAmpInLowAlarm -->0
+                    <!-- RpEnd -->
+                </td>
+                <td></td>
+                <td class="tableHeaderTextCentered">PreAmp Out Off</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="PreAmpOutOffAlarm" 
+                        RpTextType="Unsigned32"  RpGetType=Direct 
+                        RpGetPtr=preAmpOutOffAlarm -->0
+                    <!-- RpEnd -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tableHeaderTextCentered">PreAmp In Off</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="PreAmpInOffAlarm" 
+                        RpTextType="Unsigned32"  RpGetType=Direct 
+                        RpGetPtr=preAmpInOffAlarm -->0
+                    <!-- RpEnd -->
+                </td>
+                <td></td>
+                <td class="tableHeaderTextCentered">Interlock</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="InterlockAlarm" 
+                        RpTextType="Unsigned32"  RpGetType=Direct  
+                        RpGetPtr=interlockAlarm -->0
+                    <!-- RpEnd -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tableHeaderTextCentered">Power Supply One</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="PowerSupply1Alarm" 
+                        RpTextType="Unsigned32"  RpGetType=Direct 
+                        RpGetPtr=powerSupply1Alarm -->0
+                    <!-- RpEnd -->
+                </td>
+                <td></td>
+                <td class="tableHeaderTextCentered">Power Supply Two</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="PowerSupply2Alarm" 
+                        RpTextType="Unsigned32"  RpGetType=Direct 
+                        RpGetPtr=powerSupply2Alarm -->0
+                    <!-- RpEnd -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tableHeaderTextCentered">System Fuse</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="SystemFuseAlarm" 
+                        RpTextType="Unsigned32"  RpGetType=Direct  
+                        RpGetPtr=systemFuseAlarm -->0
+                    <!-- RpEnd -->
+                </td>
+                <td></td>
+                <td class="tableHeaderTextCentered">Power Safety Mode</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="PowerSafetyModeAlarmAlarm" 
+                        RpTextType="Unsigned32"  RpGetType=Direct  
+                        RpGetPtr=powerSafetyModeAlarm -->0
+                    <!-- RpEnd -->
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="tableHeaderTextCentered">48V A Off</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="48VAOffAlarm" 
+                        RpTextType="Unsigned32"  RpGetType=Direct  
+                        RpGetPtr=a48VAOffAlarm -->0
+                    <!-- RpEnd -->
+                </td>
+                <td></td>
+                <td class="tableHeaderTextCentered">48V B Off</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="48VBOffAlarm" 
+                        RpTextType="Unsigned32"  RpGetType=Direct  
+                        RpGetPtr=b48VBOffAlarm -->0
+                    <!-- RpEnd -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tableHeaderTextCentered">Booster In Too High</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="BoosterInTooHighAlarm" 
+                        RpTextType="Unsigned32"  RpGetType=Direct  
+                        RpGetPtr=boosterInTooHighAlarm -->0
+                    <!-- RpEnd -->
+                </td>
+                <td></td>
+                <td class="tableHeaderTextCentered">Booster In High</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="BoosterInHighAlarm" 
+                        RpTextType="Unsigned32"  RpGetType=Direct  
+                        RpGetPtr=boosterInHighAlarm -->0
+                    <!-- RpEnd -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tableHeaderTextCentered">Booster In Low</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="BoosterInLowAlarm" 
+                        RpTextType="Unsigned32"  RpGetType=Direct  
+                        RpGetPtr=boosterInLowAlarm -->0
+                    <!-- RpEnd -->
+                </td>
+                <td></td>
+                <td class="tableHeaderTextCentered">Booster In Off</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="BoosterInOffAlarm" 
+                        RpTextType="Unsigned32"  RpGetType=Direct  
+                        RpGetPtr=boosterInOffAlarm -->0
+                    <!-- RpEnd -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tableHeaderTextCentered">Booster Out Off</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="BoosterOutOffAlarm" 
+                        RpTextType="Unsigned32"  RpGetType=Direct 
+                        RpGetPtr=boosterOutOffAlarm -->0
+                    <!-- RpEnd -->
+                </td>
+                <td></td>
+                <td class="tableHeaderTextCentered">Booster Out Low</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="BoosterOutLowAlarm" 
+                        RpTextType="Unsigned32"  RpGetType=Direct  
+                        RpGetPtr=boosterOutLowAlarm -->0
+                    <!-- RpEnd -->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tableHeaderTextCentered">Booster Out High</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="BoosterOutHighAlarm" 
+                        RpTextType="Unsigned32"  RpGetType=Direct 
+                        RpGetPtr=boosterOutHighAlarm -->1
+                    <!-- RpEnd -->
+                </td>
+                <td></td>
+                <td class="tableHeaderTextCentered">Booster Out Too High</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="BoosterOutTooHighAlarm" 
+                        RpTextType="Unsigned32"  RpGetType=Direct 
+                        RpGetPtr=boosterOutTooHighAlarm -->1
+                    <!-- RpEnd -->
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="tableHeaderTextCentered">Pump Current</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="PumpCurrentAlarm" 
+                        RpTextType="Unsigned32"  RpGetType=Direct  
+                        RpGetPtr=pumpCurrentAlarm -->0
+                    <!-- RpEnd -->
+                </td>
+                <td></td>
+                <td class="tableHeaderTextCentered">Back Refl Too High</td>
+                <td class="tableBorderTextCentered">
+                    <!-- RpNamedDisplayText Name="BackReflTooHighAlarm" 
+                        RpTextType="Unsigned32"  RpGetType=Direct  
+                        RpGetPtr=backReflectorAlarm -->0
+                    <!-- RpEnd -->
+                </td>
+            </tr>
+           
+            </tbody>
+        </table>
+    
+        <script>
+            // Script to color alarm cells based on the value contained therein
+            var tds = document.getElementById("alarmtable").getElementsByTagName("td");
+            var num_tds = tds.length;
+            for (var i = 0; i < num_tds; i++) {
+                if (tds[i].innerText.indexOf("1") > -1) {
+                    tds[i].style.backgroundColor = "red";
+                 }
+                else if (tds[i].innerText.indexOf("0") > -1){
+                    tds[i].style.backgroundColor = "green"
+                }
+            }
+              
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,221 @@
+<!-- RpPageHeader RpAccess=Realm1 RpAccess=Realm2 -->
+<!-- RpEnd -->
+<!DOCTYPE html> <!-- This html doc is for the P Builder generation -->
+<html>
+
+    <title>
+	EDFA Network Administration
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Refresh" content="30">
+    <link rel="stylesheet" href="EDFA_stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="../public_html/stylesheet.css" type="text/css"/>
+
+    <script src="EDFA_Utils.js" language="JavaScript"></script>
+    <!-- <link type="text/css" href="/css/stylesheet.css" rel="stylesheet">
+    <script src="/scripts/errhandler.js" language="JavaScript"></script>
+    <script src="/scripts/validation.js" language="JavaScript"></script>
+    </script>-->
+    <style>
+        
+            #wrapper {
+                width: 100%;
+                border: 1px solid #000;
+                float: left;
+                background-color: #C0C0C0;
+                border-style: solid;
+                border-color: #383838; 
+                border-radius: 10px 10px 0 0;}
+
+            .headerDiv {
+                float: left;
+                width: 33%;
+                text-align: left;
+                font-size: 24px;
+                FONT-WEIGHT: bold;
+            }
+
+            .headerDiv2 {
+                float: right;
+                text-align: center;
+                border-style: solid;
+                border-color: #383838;
+                border: 1px solid #000;}
+
+            .headerDiv3 {
+                float: left;
+                width: 33%;
+                text-align: left;
+                font-size: 18px;
+                FONT-WEIGHT: bold;}
+
+            #navigation{
+                width: 100%;
+                float: left;
+                background-color: #C0C0C0;
+                border-style: solid;
+                border-color: #383838;
+                border: 1px solid #000;
+                border-radius: 0 0 10px 10px;
+                font-size: 14px;}
+
+
+            #header {
+                padding: 20px;
+
+            }
+        
+    </style> 
+    
+    <div id="wrapper">
+        <div id="header">
+            <div class="headerDiv">
+                EDFA Network Administration
+            </div>
+            <div class="headerDiv">
+            </div>
+            <div class="headerDiv2">
+                <!-- RpImageSource RpObjectPtr=PgLogo -->
+                <IMG SRC="Images/Logo.jpg" alt="Corporate Logo" width="256" height="64">
+                <!-- RpEnd -->
+            </div>
+        </div>          
+    </div>
+
+<nav  id = "navigation">
+        <a href="EDFAGeneralSettings.html">General Settings</a> |
+        <a href="EDFAChassisManager.html">EDFA Chassis Manager</a> |
+        <strong>Network Administration</strong> |
+        <a href="EDFAThresholdSettings.html">Threshold</a> |
+        <a href="EDFAAlarmsStatus.html">Alarms Status</a> |
+        <a href="EDFAWelcomePage.html">Log Out</a>
+    </nav>
+        
+<table width="70%" style="border:1; border-color: black; border-radius: 0 0 10px 10px;">
+    <tr class="tableBorderTextCentered">
+        <th class="tableBorderTextCentered" style="width:25%">
+            <span class="tdbold">Network and IP Managers</span>
+        </th>
+        <th class="tableBorderTextCentered" style="width:22.5%">
+            <span class="tdbold">Value</span>
+        </th>
+        <th class="tableBorderTextCentered" style="width:22.5%">
+            <span class="tdbold">Help</span>
+        </th>
+    </tr>
+
+    <tr>
+        <td class="tableHeaderTextCentered">IP Address</td>
+        <td class="tableBorderTextCentered">
+            <!-- RpNamedDisplayText Name="earIpAddress" RpTextType="ASCII" 
+                RpGetType=Direct RpGetPtr=earIpAddress_temp -->
+            10.10.1.100
+            <!-- RpEnd -->
+        </td>
+        <td class="tableBorderTextCentered">
+            <!-- Help Place Holder, TBD -->
+        </td>
+    </tr>
+
+    <tr>
+        <td class="tableHeaderTextCentered">Network Mask</td>
+        <td class="tableBorderTextCentered" >
+            <!-- RpNamedDisplayText Name="earSubnetMask" RpTextType="ASCII" 
+                RpGetType=Direct RpGetPtr=earSubnetMask_temp -->
+            255.255.255.0<!-- RpEnd --> 
+        </td> 
+        <td class="tableBorderTextCentered" >
+            <!-- Help Place Holder, TBD -->
+        </td>
+    </tr>
+
+    <tr>
+        <td class="tableHeaderTextCentered">Gateway</td>
+        <td class="tableBorderTextCentered">
+            <!-- RpNamedDisplayText Name="earGateway" RpTextType="ASCII" 
+                RpGetType=Direct RpGetPtr=earGateway_temp -->
+            10.10.1.1
+            <!-- RpEnd -->
+        </td>
+        <td class="tableBorderTextCentered">
+            <!-- Help Place Holder, TBD -->
+        </td>
+    </tr>
+
+    <tr>
+        <td class="tableHeaderTextCentered">IP Manager (1)</td>
+        <td class="tableBorderTextCentered">
+            <!-- RpNamedDisplayText Name="longIPManager1" RpTextType="ASCII" 
+                RpGetType=Function RpGetPtr=getIPManager1 -->
+            <!-- RpEnd -->
+        </td>
+        <td class="tableBorderTextCentered">
+            <!-- Help Place Holder, TBD -->
+        </td>
+    </tr>
+
+    <tr>
+        <td class="tableHeaderTextCentered">IP Manager (2)</td>
+        <td class="tableBorderTextCentered">
+            <!-- RpNamedDisplayText Name="longIPManager2" RpTextType="ASCII" 
+                RpGetType=Function RpGetPtr=getIPManager2 -->
+            <!-- RpEnd -->
+        </td>
+        <td class="tableBorderTextCentered">
+            <!-- Help Place Holder, TBD -->
+        </td>
+    </tr>
+
+    <tr>
+        <td class="tableHeaderTextCentered">IP Manager (3)</td>
+        <td class="tableBorderTextCentered">
+            <!-- RpNamedDisplayText Name="longIPManager3" RpTextType="ASCII" 
+                RpGetType=Function RpGetPtr=getIPManager3 -->
+            <!-- RpEnd -->
+        </td>
+        <td class="tableBorderTextCentered">
+            <!-- Help Place Holder, TBD -->
+        </td>
+    </tr>
+
+    <tr>
+        <td class="tableHeaderTextCentered">IP Manager (4)</td>
+        <td class="tableBorderTextCentered">
+            <!-- RpNamedDisplayText Name="longIPManager4" RpTextType="ASCII" 
+                RpGetType=Function RpGetPtr=getIPManager4 -->
+            <!-- RpEnd -->
+        </td>
+        <td class="tableBorderTextCentered">
+            <!-- Help Place Holder, TBD -->
+        </td>
+    </tr>
+
+    <tr>
+        <td class="tableHeaderTextCentered">IP Manager (5)</td>
+        <td class="tableBorderTextCentered">
+            <!-- RpNamedDisplayText Name="longIPManager5" RpTextType="ASCII" 
+                RpGetType=Function RpGetPtr=getIPManager5 -->
+            <!-- RpEnd -->
+        </td>
+        <td class="tableBorderTextCentered">
+            <!-- Help Place Holder, TBD -->
+        </td>
+    </tr>
+
+    <tr>
+        <td class="tableHeaderTextCentered">IP Manager (6)</td>
+        <td class="tableBorderTextCentered">
+            <!-- RpNamedDisplayText Name="longIPManager6" RpTextType="ASCII" 
+                RpGetType=Function RpGetPtr=getIPManager6 -->
+            <!-- RpEnd -->
+        </td>
+        <td class="tableBorderTextCentered">
+            <!-- Help Place Holder, TBD -->
+        </td>
+    </tr>
+
+</table>
+
+</body>
+
+</html>
